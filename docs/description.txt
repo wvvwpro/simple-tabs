@@ -1,0 +1,7 @@
+Lightweight jQuery simple tabs with styled active tab (without animation).
+
+js- classes are needed for js actions.
+.tab - for css inactive tabs hiding.
+.active - for active navigation item and active tabs content.
+
+All the rest of styles you could remove or change any way you want

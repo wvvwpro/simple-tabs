@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>Simple tabs without animation</title>
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/simpletabs.css">     
+</head>
+<body>   
+<!-- begin example 1 -->    
+<h2>Simple tabs example</h2>  
+<ul class="tabs-nav">
+    <li class="tabs-nav__item js-tabs-item active">
+        <a class="tabs-nav__link js-tabs-link" href="#tab-1">First tab</a>
+    </li>
+    <li class="tabs-nav__item js-tabs-item">
+        <a class="tabs-nav__link js-tabs-link" href="#tab-2">Second tab</a>
+    </li>
+    <li class="tabs-nav__item js-tabs-item">
+        <a class="tabs-nav__link js-tabs-link" href="#tab-3">Third tab</a>
+    </li>                               
+</ul>
+<div class="tabs-content">
+    <div class="tab js-tabs-content active" id="tab-1">First tab content</div>
+    <div class="tab js-tabs-content" id="tab-2">Second tab content</div>
+    <div class="tab js-tabs-content" id="tab-3">Third tab content</div>
+</div>  
+<!-- example 1 eof -->
+<hr>
+<!-- begin example 2 -->
+<h2>Tabs inside tabs example</h2>    
+<ul class="tabs-nav">
+    <li class="tabs-nav__item js-tabs-item active">
+        <a class="tabs-nav__link js-tabs-link" href="#tab-4">First tab</a>
+    </li>
+    <li class="tabs-nav__item js-tabs-item">
+        <a class="tabs-nav__link js-tabs-link" href="#tab-5">Second tab</a>
+    </li>                               
+</ul>
+<div class="tabs-content">
+    <div class="tab js-tabs-content active" id="tab-4">
+    	First tab content
+        <ul class="tabs-nav">
+            <li class="tabs-nav__item js-tabs-item active">
+                <a class="tabs-nav__link js-tabs-link" href="#inner-tab-1">First inner tab</a>
+            </li>
+            <li class="tabs-nav__item js-tabs-item">
+                <a class="tabs-nav__link js-tabs-link" href="#inner-tab-2">Second inner tab</a>
+            </li>                               
+        </ul> 
+        <div class="tabs-content">
+            <div class="tab js-tabs-content active" id="inner-tab-1">First inner tab content</div>
+            <div class="tab js-tabs-content" id="inner-tab-2">Second inner tab content</div>
+        </div>        
+    </div>
+    <div class="tab js-tabs-content" id="tab-5">Second tab content</div>
+</div>  
+<!-- example 2 eof -->          
+<script src="js/jquery.js"></script>		
+<script src="js/jquery-migrate.js" ></script>      
+<script src="js/simpletabs.js" ></script>     
+</body>
+</html>
